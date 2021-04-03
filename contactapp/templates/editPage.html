@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style-edit.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5f8fbb8210.js" crossorigin="anonymous"></script> 
+    <title>Edith Contact</title>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <a href="contactsProfile.html">
+                <i class="fas fa-arrow-circle-left back-btn icon-gradient"></i>
+            </a>
+            <div class="hero-info">
+                <h1 class="name">John Doe</h1>
+                <p class="relationship">Brother</p>
+            </div>
+        </header>
+
+        <section class="contact-info">
+            <div class="info-line">
+                <i class="fas fa-phone icon-gradient"></i>
+                <input type="text" class="type" name="full name" placeholder="Full name">
+            </div>
+
+            <div class="info-line">
+                <i class="fas fa-sms text icon-gradient"></i>
+                <input type="text" class="type" name="relationship" placeholder="Relationship">
+            </div>
+
+            <div class="info-line">
+                <i class="far fa-envelope icon-gradient"></i>
+                <input type="text" class="type" name="email" placeholder="E-mail">
+            </div>
+
+            <div class="info-line">
+                <i id="location" class="fas fa-map-marker-alt icon-gradient"></i>
+                <input type="text" class="type" name="address" placeholder="Address">
+            </div>
+        </section>
+
+        <section class="button-container">
+            <a href="#">
+                <div class="update-contact">
+                    <i class="fas fa-check"></i>
+                    <button class="button">Save Contact</button>
+                </div>
+            </a>
+        </section>
+        <section class="button-container">
+            <a href="delete.html">
+                <div class="update-contact">
+                    <i class="fas fa-trash"></i>
+                    <button class="button">Delete Contact</button>
+                </div>
+            </a>
+        </section>
+</body>
+</html>

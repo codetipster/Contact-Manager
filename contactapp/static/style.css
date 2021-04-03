@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #D2D0BA;
+}
+
+.container {
+    max-width: 528px;
+    margin: 0 auto;
+    background-color: #0B4F6C;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    color: #ffff;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35, 61, 77) 35%, rgba(0,212,255,1) 100%);
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.contact-search {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    outline: none;
+
+}
+
+.i {
+    font-size: 1.5rem;
+
+}
+
+.contact-name {
+    font-size: 1.2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+hr {
+    border: 1px solid #494a4b;
+}
+
+.list-item {
+    list-style: none;
+}
+
+.relationship {
+    width: 6em;
+    text-align: center;
+    padding: .4em .5em;
+    border-radius: 100px;
+    border-top-left-radius: 0;
+    background: #75a85e;
+    font-size: .7em;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+    transition: 0.6s;
+}
+
+.contact-section:hover {
+    background-color: #49C6E5;
+}
+
+.text {
+    padding-left: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
