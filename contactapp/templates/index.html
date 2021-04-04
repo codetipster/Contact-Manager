@@ -19,12 +19,14 @@
     <div class="container">
         <!-- library banner header -->
         <header class="header">
-            <form class="search-bar">
+            <form class="search-bar" id="search-form">
                 <input type="search-name" class="contact-search" name="search-area" placeholder="Search"/>
+
+                <i onclick="document.getElementById('search-form').submit()"></i>
             </form>
 
-            <a href="editPage.html">
-                <i class="fas fa-user-plus "></i>
+            <a href="{% url 'add-contact' %}">
+                <i class="fas fa-user-plus add"></i>
             </a>
         </header>
 
