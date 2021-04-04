@@ -13,19 +13,19 @@
 <body>
     <div class="container">
         <header class="hero">
-            <a href="index.html">
+            <a href="{% url 'index' %}">
                 <i class="fas fa-arrow-circle-left back-btn icon-gradient"></i>
             </a>
             <div class="hero-info">
-                <h1 class="name">John Doe</h1>
-                <p class="relationship">Brother</p>
+                <h1 class="name">{{ contact.full_name }}</h1>
+                <p class="relationship">{{ contact.relationship }}</p>
             </div>
         </header>
 
         <section class="contact-info">
             <div class="info-line">
                 <i class="fas fa-phone icon-gradient"></i>
-                <p class="phone-number">1234567890</p>
+                <p class="phone-number">{{ contact.phone_model }}</p>
             </div>
 
             <div class="info-line">
@@ -35,12 +35,12 @@
 
             <div class="info-line">
                 <i class="far fa-envelope icon-gradient"></i>
-                <p class="email">JohnDoe@info.com</p>
+                <p class="email">{{ contact.email }}</p>
             </div>
 
             <div class="info-line">
                 <i id="location" class="fas fa-map-marker-alt icon-gradient"></i>
-                <p class="address">Samuel street, 4th Avenue</p>
+                <p class="address">{{ contact.address }}</p>
             </div>
         </section>
 
