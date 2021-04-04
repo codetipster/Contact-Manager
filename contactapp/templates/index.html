@@ -19,8 +19,8 @@
     <div class="container">
         <!-- library banner header -->
         <header class="header">
-            <form class="search-bar" id="search-form">
-                <input type="search-name" class="contact-search" name="search-area" placeholder="Search"/>
+            <form action="/" method="GET" class="search-bar" id="search-form">
+                <input type="search-name" class="contact-search" name="search-area" placeholder="Search" value="{{search_input}}"/>
 
                 <i onclick="document.getElementById('search-form').submit()"></i>
             </form>
