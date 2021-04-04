@@ -33,11 +33,12 @@
         <!-- contact-list -->
         <section class="contacts-library">
             <ul class="contacts-list">
+                {% for contact in contacts reversed %}
                 <a href="contactsProfile.html">
                     <div class="contact-section">
                         <li class="list-item">
-                            <p class="contact-name">Samuel Nzekwe</p>
-                            <p class="relationship">Friend</p>
+                            <p class="contact-name">{{ contact.full_name | title }}</p>
+                            <p class="relationship">{{ contact.relationship | title }}</p>
                         </li>
                         <li class="list-item">
                             <i class="fas fa-phone"></i>
@@ -48,66 +49,7 @@
 
                 <hr>
 
-                <a href="contactsProfile.html">
-                    <div class="contact-section">
-                        <li class="list-item">
-                            <p class="contact-name">Katerina Zafairi</p>
-                            <p class="relationship">Sister</p>
-                        </li>
-                        <li class="list-item">
-                            <i class="fas fa-phone"></i>
-                            <i class="fas fa-sms text"></i>
-                        </li>
-                    </div>
-                </a>
-
-                <hr>
-
-                <a href="contactsProfile.html">
-                    <div class="contact-section">
-                        <li class="list-item">
-                            <p class="contact-name">Matias Cardon</p>
-                            <p class="relationship">Brother</p>
-                        </li>
-                        <li class="list-item">
-                            <i class="fas fa-phone"></i>
-                            <i class="fas fa-sms text"></i>
-                        </li>
-                    </div>
-                </a>
-
-                <hr>
-
-                <a href="contactsProfile.html">
-                <div class="contact-section">
-                    <li class="list-item">
-                        <p class="contact-name">Chinasa Nzekwe</p>
-                        <p class="relationship">Sister</p>
-                    </li>
-                    <li class="list-item">
-                        <i class="fas fa-phone"></i>
-                        <i class="fas fa-sms text"></i>
-                    </li>
-                </div>
-                </a>
-
-                <hr>
-
-                <a href="contactsProfile.html">
-                <div class="contact-section">
-                    <li class="list-item">
-                        <p class="contact-name">Samuel Nzekwe</p>
-                        <p class="relationship">Friend</p>
-                    </li>
-                    <li class="list-item">
-                        <i class="fas fa-phone"></i>
-                        <i class="fas fa-sms text"></i>
-                    </li>
-                </div>
-                </a>
-
-                <hr>
-
+                {% endfor %}
 
             </ul>
         </section>
