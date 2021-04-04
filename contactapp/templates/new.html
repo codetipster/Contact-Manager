@@ -20,15 +20,19 @@
             </a>
             <div class="hero-info">
                 <h1 class="name">New Contact</h1>
-                <p class="relationship">Brother</p>
+                
             </div>
         </header>
 
+
+        <form id="" action="" method="POST">
+            {% csrf_token %}
         <section class="contact-info">
             <div class="info-line">
-                <i class="fas fa-phone icon-gradient"></i>
-                <input type="text" class="type" name="full name" placeholder="Full name">
+                
+                <input type="text" class="type" name="fullname" placeholder="Full Name">
             </div>
+
 
             <div class="info-line">
                 <i class="fas fa-sms text icon-gradient"></i>
@@ -38,6 +42,11 @@
             <div class="info-line">
                 <i class="far fa-envelope icon-gradient"></i>
                 <input type="text" class="type" name="email" placeholder="E-mail">
+            </div>
+
+            <div class="info-line">
+                <i class="fas fa-phone icon-gradient"></i>
+                <input type="text" class="type" name="phone_number" placeholder="Phone number">
             </div>
 
             <div class="info-line">
@@ -54,6 +63,6 @@
                 </div>
             </a>
         </section>
-        
+        </form>
 </body>
 </html>
